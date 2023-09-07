@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
     - name: mywebserver
-      image: nginx-2
+      image: nginx-2..
   
       
