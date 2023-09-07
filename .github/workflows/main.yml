@@ -13,3 +13,4 @@ jobs:
         echo Test line....aswin
         echo $(date)
         chmod +x test.sh
+        sh test.sh
