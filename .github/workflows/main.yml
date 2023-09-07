@@ -12,3 +12,4 @@ jobs:
         echo test, and deploy your project.
         echo Test line....aswin
         echo $(date)
+        chmod +x test.sh
