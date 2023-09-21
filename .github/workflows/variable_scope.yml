@@ -19,8 +19,10 @@ jobs:
       JOB_VARIABLE: This is a JOB-level variable that is inside the JOB
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Print step level varibale
+      run: |
+        echo "::set-env name=MY_STEP_VARIABLE::This is a step-level variable"
+        echo "Step-Level Variable: $MY_STEP_VARIABLE"               
 
     - name: Print workflow-level variables
       run: |
