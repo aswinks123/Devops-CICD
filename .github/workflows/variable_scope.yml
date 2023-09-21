@@ -5,13 +5,18 @@ on:
     branches:
       - main
 
+env:   # Define workflow-level environment variables here
+      
+      MY_WORKFLOW_VARIABLE: This is a workflow-level variable outside!
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
     
-    env:   # Define workflow-level environment variables here
-      MY_VARIABLE: Amal_variable
-      ANOTHER_VARIABLE: Aswin_variable
+    env:   # Job Env Variable
+      
+      JOB_VARIABLE: This is a JOB-level variable that is inside the JOB
 
     steps:
     - name: Checkout code
@@ -19,5 +24,10 @@ jobs:
 
     - name: Print workflow-level variables
       run: |
-        echo "MY_VARIABLE: $MY_VARIABLE"
-        echo "ANOTHER_VARIABLE: $ANOTHER_VARIABLE"
+        echo "Workflow Variable: $MY_VARIABLE"
+        
+
+    - name: Print JOB-level variables
+      run: |
+        echo "JOB Variable: $MY_WORKFLOW_VARIABLE"
+       
