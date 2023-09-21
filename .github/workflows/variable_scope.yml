@@ -29,5 +29,5 @@ jobs:
 
     - name: Print JOB-level variables
       run: |
-        echo "JOB Variable: $MY_WORKFLOW_VARIABLE"
+        echo "JOB Variable: $JOB_VARIABLE"
        
