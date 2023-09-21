@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     
     env:   # Define workflow-level environment variables here
-      MY_VARIABLE: my_value
-      ANOTHER_VARIABLE: another_value
+      MY_VARIABLE: Amal_variable
+      ANOTHER_VARIABLE: Aswin_variable
 
     steps:
     - name: Checkout code
