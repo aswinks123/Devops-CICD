@@ -12,7 +12,7 @@ env:   # Define workflow-level environment variables here
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     env:   # Job Env Variable
       
@@ -24,10 +24,10 @@ jobs:
 
     - name: Print workflow-level variables
       run: |
-        echo "Workflow Variable: %MY_WORKFLOW_VARIABLE%"
+        echo "Workflow Variable: $MY_WORKFLOW_VARIABLE"
         
 
     - name: Print JOB-level variables
       run: |
-        echo "JOB Variable: %JOB_VARIABLE%"
+        echo "JOB Variable: $JOB_VARIABLE"
        
