@@ -19,11 +19,11 @@ jobs:
       JOB_VARIABLE: This is a JOB-level variable that is inside the JOB
 
     steps:
-    - name: Print step level varibale
-      run: |
-        echo "::set-env name=MY_STEP_VARIABLE::This is a step-level variable"
-        echo "Step-Level Variable: $MY_STEP_VARIABLE"               
-
+    - name: Create and run step level varibale
+     
+      run: echo "MY_STEP_VARIABLE=This is a step-level variable"      
+    
+   
     - name: Print workflow-level variables
       run: |
         echo "Workflow Variable: $MY_WORKFLOW_VARIABLE"
