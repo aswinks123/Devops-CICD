@@ -24,7 +24,7 @@ jobs:
 
     - name: Print workflow-level variables
       run: |
-        echo "Workflow Variable: $MY_VARIABLE"
+        echo "Workflow Variable: $MY_WORKFLOW_VARIABLE"
         
 
     - name: Print JOB-level variables
