@@ -1,13 +1,13 @@
 name: test workflow with variables
 
 on: [push]
-env:
-  college: "Lambton"
-  course: "DOCT"
 
 jobs:
   job1:
     runs-on: ubuntu-latest
+    env:
+      college: "Lambton"
+      course: "DOCT"
 
     
     steps:
