@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v2
       - name: declare varibale
         run: |
-          college = "Lambton"
-          course = "DOCT"
+          college="Lambton"
+          course="DOCT"
       - name: step2
         run: |
           echo "From step2 college and course is"
