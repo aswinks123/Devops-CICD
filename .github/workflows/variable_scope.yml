@@ -16,6 +16,10 @@ jobs:
         run: |
           college="Lambton"
           course="DOCT"
+          echo "From ssame step"
+          echo $college
+          echo $course 
+          
       - name: step2
         run: |
           echo "From step2 college and course is"
