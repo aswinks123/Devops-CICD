@@ -5,15 +5,17 @@ on: [push]
 jobs:
   job1:
     runs-on: ubuntu-latest
-    env:
-      college: "Lambton"
-      course: "DOCT"
+  
 
     
     steps:
+      
       - name: step1
         uses: actions/checkout@v2
-
+      - name: declare varibale
+        run: |
+          college: "Lambton"
+          course: "DOCT"
       - name: step2
         run: |
           echo "From step2 college and course is"
