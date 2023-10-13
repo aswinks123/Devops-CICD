@@ -1,35 +1,18 @@
-name: My CI/CD Workflow
+name: test workflow
 
-on:
-  push:
-    branches:
-      - main
-
-env:   # Define workflow-level environment variables here
-      
-      MY_WORKFLOW_VARIABLE: This is a workflow-level variable outside!
+on: [push]
 
 
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
-    
-    env:   # Job Env Variable
-      
-      JOB_VARIABLE: This is a JOB-level variable that is inside the JOB
 
     steps:
-    - name: Create and run step level varibale
-     
-      run: echo "MY_STEP_VARIABLE=This is a step-level variable"      
-    
-   
-    - name: Print workflow-level variables
-      run: |
-        echo "Workflow Variable: $MY_WORKFLOW_VARIABLE"
-        
+      - name: step1
+        uses: actions/checkout
 
-    - name: Print JOB-level variables
-      run: |
-        echo "JOB Variable: $JOB_VARIABLE"
-       
+      - name: step2
+        run: |
+          echo "Hello world"
+
+
