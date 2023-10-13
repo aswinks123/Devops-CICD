@@ -26,4 +26,15 @@ jobs:
           echo $college
           echo $course
 
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step4
+        run: |
+          echo "From step1 and job2 college and course is"
+          echo $college
+          echo $course
+
+
+    
 
